@@ -1,9 +1,9 @@
-# Feedback Sorter using Azure Text Analytics API
+# Feedback Sorter using Azure Cognitive Services - Text Analytics API
 Table of Contents
 =================
 <!-- TOC -->
 
-- [Feedback Sorter using Azure Text Analytics API](#feedback-sorter-using-azure-text-analytics-api)
+- [Feedback Sorter using Azure Cognitive Services - Text Analytics API](#feedback-sorter-using-azure-cognitive-services---text-analytics-api)
     - [Problem Summary](#problem-summary)
     - [Solution](#solution)
         - [A solution based on Azure Functions, Azure Queue Storage, and Text Analytics API](#a-solution-based-on-azure-functions-azure-queue-storage-and-text-analytics-api)
