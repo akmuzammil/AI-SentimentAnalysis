@@ -16,6 +16,7 @@ Table of Contents
             - [Step 3 - Add Output Bindings to function.json](#step-3---add-output-bindings-to-functionjson)
             - [Step 4 - Call the Text Analytics API from Function app](#step-4---call-the-text-analytics-api-from-function-app)
         - [Testing](#testing)
+- [Conclusion](#conclusion)
 - [References](#references)
 
 <!-- /TOC -->
@@ -267,6 +268,10 @@ Navigate back to our function in the portal, and open the Monitor tab. Select th
 ![qmonitor](images/qmonitor.jpg)
 
 We test by Adding various messages like positive, negative and neutral and check the output queues accordingly in the storage explorer.
+
+# Conclusion
+We now have a working feedback sorter! As messages arrive in the input queue, our function uses the Text Analytics API service to get a sentiment score. Based on that score, the function forwards the messages to the appropriate queue. While it seems like the function processes only one queue item at a time, the Azure Functions runtime will actually read batches of queue items and spin up other instances of our function to process them in parallel.
+
 
 # References
 [Microsoft Learn](https://docs.microsoft.com/en-us/learn)
